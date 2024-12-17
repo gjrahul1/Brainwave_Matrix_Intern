@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Henny+Penny&family=Meddon&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+J+Guides&family=Poppins&display=swap');
+
+
+:root {
+    --primary-color: #C065EB;
+    --text-color: #000000;
+    --nav-color: #DCDCDC;
+    --bg-color: #f9fafb;
+}
+
+body {
+    background: rgba(246, 140, 174, 0.8);
+    background: linear-gradient(90deg, rgba(121,9,45,0.9887604700083158) 0%, rgba(116,111,210,0.1540265764508929) 0%, rgba(0,212,255,1) 100%);
+    cursor: none;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 10px 10px;
+    flex-grow: 1;
+    width: 99%;
+    /* max-width: 1550px; */
+    /* background: rgba(94, 113, 106,0.5); */
+    border-radius: 5px;
+    margin: 0;
+}
+
+.navbar .label1 {
+    align-items: flex-start;
+    font-size: 1.3rem;
+    font-family: 'Playwrite GB J Guides',sans-serif;
+}
+
+.navbar a {
+    margin:0;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.navbar .nav {
+    display: flex;
+    padding:10px 10px 10px 0;
+}
+
+.nav-elements {
+    color: var(--text-color);
+    column-gap: 2rem;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: hsla(0, 6%, 33%, 0.8);
+}
+
+img {
+    width:50%;
+    border-radius: 12px;
+    display: block;
+    margin:0 auto;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 300px;
+    margin: 0 0 100x 20px;
+    margin-top:10vh;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #bacdd8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);
+    padding: 8px;
+    border-radius:12px;
+}
+
+.tag {
+    padding: 4px 8px;
+    border: 1px solid #e5eaed;
+    border-radius: 50px;
+    font-size:12px;
+    font-weight:600;
+    color:#788697;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+.flex-container .text-side .review-text p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 150%;
+    text-align: justify;
+    transition: 0.2s;
+}
+
+.space-between {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+}
+
+.space-between-2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+    border:none;
+    padding:12px 14px;
+    color: #0077ff;
+    background-color: #e0efff;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.card_details {
+    padding: 15px 8px 8px 8px;
+}
+
+button:focus, button:hover {
+    background-color: #0077ff;
+    color:#e0efff;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 90px;
+    /* margin-top: 20px; */
+}
+
+.review-text {
+    margin-left: 108px;
+    font-family: 'Playfair Display',sans-serif;
+    text-align: justify;
+    border-radius: 10px;
+    padding:8px;
+    max-width:950px;
+    flex-grow:1;
+}
+
+.review-heading {
+    padding-left: 125px;
+    font-family:'Playfair Display',sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.cursor {
+    position:fixed;
+    width: 25px;
+    height:25px;
+    border-radius: 50%;
+    background: #f9fafb;
+    transition: 0.1s;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+p:hover ~ .cursor {
+    transform: scale(8);
+}
+
+.welcome-text {
+    margin: 25px;
+    padding: 25px; 
+}
+
+.typing-animation {
+    margin: 5px 0; /* Reduce margin to bring it closer to welcome-text */
+    padding: 0; /* Remove any default padding */
+}
+
+.welcome-text-3 {
+    margin: 5px 0; /* Reduce margin to bring it closer to typing-animation */
+    padding: 0; /* Remove any default padding */
+}
+
+.welcome-text p {
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(3.5rem, 0.5vw, 4rem);     
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 5px; /* Reduce space below welcome-text */
+}
+
+.welcome-text-3 {
+    display: flex;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(3.5rem, 0.5vw, 4rem);     
+    font-family: 'Playfair Display', sans-serif;
+    margin-top: 5px; /* Reduce space above welcome-text-3 */
+}
+
+.typing-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typing-animation .dynamic-text {
+    list-style: none;
+    position:relative;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    display: flex;
+    direction: row;
+    left:0;
+}
+
+.typing-animation li {
+    margin: 0 15px;
+    background-clip: text;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-animation .thriller {
+        font-family: 'Henny Penny',sans-serif;
+        font-size: 60px;
+        margin-right: 20px;
+        color:rgba(250, 17, 17, 0.8);
+        font-weight: 200;
+        margin: 0 15px;
+        padding: 25px;
+}
+
+.typing-animation .romance {
+    font-family: 'Berkshire Swash',sans-serif;
+    font-size: 60px;
+    margin-right: 20px;
+    color:rgba(225, 64, 180, 0.8);
+    font-weight: 200;
+    margin:0 15px;
+    padding:25px;
+}
+
+.typing-animation .horror {
+    font-family:  "Meddon",sans-serif, cursive;
+    font-size: 60px;
+    margin-right: 20px;
+    color:rgba(96, 124, 226, 0.8);
+    font-weight: 200;
+    margin:0 15px;
+    padding:25px;
+margin-top: 5px; 
+}
+
+.welcome-text p {
+    display: flex;
+    left:0;
+    bottom: 0;
+    width:100%;
+    height:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(3.5rem, 0.5vw, 4rem);     
+    font-family:'Playfair Display',sans-serif;
+    margin-bottom: 10px; 
+
+}
+.welcome-text-2 p{
+    top:0;
+    display: flex;
+    left:0;
+    width:100%;
+    height:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, 0.5vw, 2rem);     
+    font-family:'Playfair Display',sans-serif;
+}
+
+.welcome-text-3{
+    display: flex;
+    left:0;
+    width:100%;
+    height:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(3.5rem, 0.5vw, 4rem);     
+    font-family:'Playfair Display',sans-serif;
+}
+
+.typing-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typing-animation .dynamic-text {
+    list-style: none;
+    position:relative;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    display: flex;
+    direction: row;
+    left:0;
+}
+
+.typing-animation li {
+    margin: 0 15px;
+    background-clip: text;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-animation .thriller {
+        font-family: 'Henny Penny',sans-serif;
+        font-size: 60px;
+        margin-right: 20px;
+        color:rgba(250, 17, 17, 0.8);
+        font-weight: 200;
+        margin: 0 15px;
+        padding: 25px;
+}
+
+.typing-animation .romance {
+    font-family: 'Berkshire Swash',sans-serif;
+    font-size: 60px;
+    margin-right: 20px;
+    color:rgba(225, 64, 180, 0.8);
+    font-weight: 200;
+    margin:0 15px;
+    padding:25px;
+}
+
+.typing-animation .horror {
+    font-family:  "Meddon",sans-serif, cursive;
+    font-size: 60px;
+    margin-right: 20px;
+    color:rgba(96, 124, 226, 0.8);
+    font-weight: 200;
+    margin:0 15px;
+    padding:25px;
+}
+
+.buy{
+    display: inline-flex;
+    margin-left:37%;
+    left:0;
+    justify-content: center;
+}
+
+.footer {
+    box-sizing: border-box;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.footer-container {
+    margin:auto;
+    max-width: 1100px;
+    /* background-color: black; */
+}
+
+.footer-col {
+    width:25%;
+    padding:70px 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style:none;
+    padding: 2px;
+    margin: 0;
+    }
+
+.footer-col h4{
+    font-size: 18px;
+    color:#000000;
+    text-transform: capitalize;
+    margin-bottom: 3px;
+    text-align:justify;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
